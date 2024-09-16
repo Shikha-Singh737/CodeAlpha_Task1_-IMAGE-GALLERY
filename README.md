@@ -1,2 +1,2 @@
-# CodeAlpha_Task1_-IMAGE-GALLERY
+# CodeAlpha_Task1_IMAGE-GALLERY
 @CodeAlpha
