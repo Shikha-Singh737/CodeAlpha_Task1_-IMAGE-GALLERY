@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(144, 159, 204);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the gallery */
+    gap: 10px; /* Add some space between the images */
+}
+
+.gallery-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row, accounting for the gap */
+    max-width: calc(50% - 20px); /* Ensure the items don't exceed half the container width */
+    margin: 10px; /* Add margin to ensure equal spacing */
+}
+
+.gallery-item img {
+    width: 100%; /* Adjust to fill the container */
+    height: 300px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.heading {
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}

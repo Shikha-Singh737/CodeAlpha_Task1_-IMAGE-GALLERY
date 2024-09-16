@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IMAGE GALLERY</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=
+"https://wallpaperaccess.com/full/292004.jpg"
+                onclick="openModal(
+'https://wallpaperaccess.com/full/292004.jpg')" 
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://as1.ftcdn.net/v2/jpg/05/57/44/90/1000_F_557449089_RGXu9WrYk95PB1lRO7wrHv99wDIwA64A.jpg"
+                onclick="openModal(
+'https://as1.ftcdn.net/v2/jpg/05/57/44/90/1000_F_557449089_RGXu9WrYk95PB1lRO7wrHv99wDIwA64A.jpg')"
+                alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://static.vecteezy.com/system/resources/previews/006/468/776/original/astronaut-flying-on-space-vector.jpg"
+                onclick="openModal(
+'https://static.vecteezy.com/system/resources/previews/006/468/776/original/astronaut-flying-on-space-vector.jpg')"
+                alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://as1.ftcdn.net/v2/jpg/05/56/18/04/1000_F_556180408_ZT8GBVBKP2BDDmhDw8HRENsg6QuAXHbw.jpg"
+                onclick="openModal(
+'https://as1.ftcdn.net/v2/jpg/05/56/18/04/1000_F_556180408_ZT8GBVBKP2BDDmhDw8HRENsg6QuAXHbw.jpg')"
+                alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.G2MSdTWs8EqFG-InGJEwnAHaDt?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.G2MSdTWs8EqFG-InGJEwnAHaDt?rs=1&pid=ImgDetMain')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://pics.craiyon.com/2023-09-26/b30da13303ab4c90a28aca6cac74bc29.webp"
+                onclick="openModal(
+'https://pics.craiyon.com/2023-09-26/b30da13303ab4c90a28aca6cac74bc29.webp')"
+                alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://i.pinimg.com/736x/b3/18/74/b31874d7eff3980fedaff00308c166af.jpg"
+                onclick="openModal(
+'https://i.pinimg.com/736x/b3/18/74/b31874d7eff3980fedaff00308c166af.jpg')"
+                alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/trippy-astronaut-biker-nikolay-todorov.jpg"
+                onclick="openModal(
+'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/trippy-astronaut-biker-nikolay-todorov.jpg')"
+                alt="Image 8">
+        </div>
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
